@@ -315,9 +315,17 @@ export function getJoinedViewsForViews(
       const aLength = diagramDict.tableData[aName]?.length ?? 0
       const bLength = diagramDict.tableData[bName]?.length ?? 0
 
-      return aIndex < bIndex || (aIndex === bIndex && aLength < bLength)
-        ? -1
-        : 1
+      if (aIndex !== bIndex) {
+        if (aIndex === undefined) return 1
+        if (bIndex === undefined) return -1
+        return aIndex < bIndex ? -1 : 1
+      }
+
+      if (aLength !== bLength) {
+        return aLength < bLength ? -1 : 1
+      }
+
+      return 1
     })
     scaffold[viewName] = joined
   })
