@@ -75,8 +75,8 @@ export interface DiagramMetadata {
 
 export interface DiagrammedModel {
   diagramDict: DiagramMetadata
-  modelName: string
-  exploreName: string
+  modelName: string | undefined | null
+  exploreName: string | undefined | null
   minimapX?: number
   minimapY?: number
   minimapScale?: number
