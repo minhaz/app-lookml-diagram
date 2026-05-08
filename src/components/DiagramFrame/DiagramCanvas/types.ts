@@ -68,7 +68,7 @@ export interface DiagramCanvasProps {
   modelDetail: DetailedModel
   pathModelName: string
   pathExploreName: string
-  currentDimensions: DiagrammedModel
+  currentDimensions?: DiagrammedModel
   zoomFactor: number
   reload: boolean
   minimapUntoggled: boolean
