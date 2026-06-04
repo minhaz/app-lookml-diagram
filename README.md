@@ -1,5 +1,7 @@
 # LookML Diagram Extension
 
+This is not an officially supported Google product. This project is not eligible for the [Google Open Source Software Vulnerability Rewards Program](https://bughunters.google.com/open-source-security).
+
 Looker’s LookML Diagram extension provides an entity-relationship-diagram for the objects within your LookML model. With the LookML Diagram developers can:
 
 - Visualize relationships between LookML objects within an explore
